@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="food-style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class='nav'>
+    <ul class="menu">
+      <li>
+        <a href="#">Special</a>
+        <img src="./assets/caret-down-solid.svg" style="width:20px;height: 20px;" />
+        <ul class="submenu">
+          <li><a href="">special 1</a></li>
+          <li><a href="">special 2</a></li>
+        </ul>
+      </li>
+      <li>
+        <img src="./assets/lunch.png" alt="lunch" />
+        <a href="#">lunch menu</a>
+        <img src="./assets/caret-down-solid.svg" style="width:20px;height: 20px;" />
+        <ul class="submenu">
+          <li><a href="">lunch 1</a></li>
+          <li><a href="">lunch 2</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">menu</a>
+        <img src="./assets/caret-down-solid.svg" style="width:20px;height: 20px;" />
+
+        <ul class="submenu">
+          <li><a href="">menu 1</a></li>
+          <li><a href="">menu 2</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">vegetarian menu</a>
+        <img src="./assets/caret-down-solid.svg" style="width:20px;height: 20px;" />
+        <ul class="submenu">
+          <li><a href="">vegetarian 1</a></li>
+          <li><a href="">vegetarian 2</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">beverages</a>
+        <img src="./assets/caret-down-solid.svg" style="width:20px;height: 20px;" />
+        <ul class="submenu">
+          <li><a href="">beverage 1</a></li>
+          <li><a href="">beverage 2</a></li>
+        </ul>
+      </li>
+      <li><a href="#">catering</a></li>
+      <li><a href="#">download menu</a></li>
+    </ul>
+
+    <div class="search-box">
+      <button class="btn-search"><img src="./assets/search-icons.png" /></button>
+      <input type="text" class="input-search" placeholder="Type to Search...">
+    </div>
+
+    <div class="wishlist">
+      <img src="./assets/heart.png" alt="">
+    </div>
+  </nav>
+
+  <div style="margin:0 auto;width:70%;">
+    <!-- breadcrumbs -->
+    <div class="breadcrumbs">
+      <span><a href="./index.html">Home</a></span> <span>/</span> Menu <span>/</span> Burgers <span>/</span> <span style="margin-left:10px;">Chicken
+            Burger</span></span>
+    </div>
+    <hr />
+
+    <!-- main-content -->
+
+    <div class="main">
+           <div class="food-image">
+            <img src="./assets/burger1.jpg" alt="chicken burger">
+           </div>
+
+           <!-- food description -->
+
+           <div class="description">
+            <h3>Chicken Burger</h3>
+            <h2>Rs. 200</h2>
+
+            <hr/>
+            
+            <p>A chicken burger is a sandwich made with a chicken patty as the main filling, typically served in a bun with various toppings and condiments.</p>
+            <h5>Availability : <span style="text-transform: capitalize;line-height: 1.5;color: green;">in stock</span></h5>
+
+
+
+            <h5>Spicy Level</h5>
+
+            <div class="container">
+              <div class="feedback">
+                <div class="rating">
+                  <input type="radio" name="rating" id="rating-5">
+                  <label for="rating-5"></label>
+                  <input type="radio" name="rating" id="rating-4">
+                  <label for="rating-4"></label>
+                  <input type="radio" name="rating" id="rating-3">
+                  <label for="rating-3"></label>
+                  <input type="radio" name="rating" id="rating-2">
+                  <label for="rating-2"></label>
+                  <input type="radio" name="rating" id="rating-1">
+                  <label for="rating-1"></label>
+            
+           </div>
+    </div>
+  </div>
+  <hr/>
+
+  <div class="spicy-level">
+    <p style="text-transform: capitalize;margin-right: 20px;">spice level</p>
+    <input
+      type="radio"
+      id="mild"
+      name="spice"
+      value="mild"
+      checked />
+    <label for="mild">Mild</label>
+
+    <input type="radio" id="spicy" name="spice" value="spicy" />
+    <label for="spicy">Spicy</label>
+
+    <input type="radio" id="medium-spicy" name="spice" value="medium spicy" />
+    <label for="medium-spicy">Medium Spicy</label>
+    <input type="radio" id="extra-spicy" name="spice" value="extra spicy" />
+    <label for="extra-spicy">Extra Spicy</label>
+  </div>
+
+</body>
+
+</html>

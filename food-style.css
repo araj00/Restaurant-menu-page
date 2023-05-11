@@ -1,0 +1,367 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+:root{
+  --highlight : rgba(0, 0, 0, .5)
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+font-family: 'Lato', sans-serif;
+}
+
+/*| Navigation |*/
+
+/* menu list */
+
+.nav {
+  width: 100%;
+  box-shadow: 0 3px 10px -2px rgba(0, 0, 0, .1);
+  border: 1px solid rgba(0, 0, 0, .1);
+  background-image: url('./assets/Restaurant-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav .menu {
+  list-style: none;
+  position: relative;
+  display: flex;
+}
+
+.nav .menu > li {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.nav .menu li>img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+}
+
+.nav .menu li:hover {
+  background: rgba(0, 0, 0, .15);
+}
+
+.nav .menu li:hover>.submenu {
+  display: block;
+}
+
+.nav .menu li {
+  float: left;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.nav .menu li a {
+  display: block;
+  padding: 20px 10px;
+  color: #fff;
+  font-size: .9em;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+nav .menu .submenu {
+  list-style: none;
+  display: none;
+  background: #fff;
+  position: absolute;
+  z-index: 10;
+  top: 100%;
+  box-shadow: -3px 3px 10px -2px rgba(0, 0, 0, .1);
+  border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.nav .menu .submenu li {
+  float: none;
+  position: relative;
+}
+
+.nav .menu .submenu li a {
+  padding: 15px 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, .05);
+  color: #222;
+}
+
+/* search bar in navbar menu */
+
+.search-box .btn-search img {
+  width: 20px;
+  height: 20px;
+}
+
+.search-box {
+  display: inline-block;
+  position: relative;
+}
+
+.input-search {
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: #ffffff9a;
+  padding-right: 40px;
+
+}
+
+.input-search::placeholder {
+  color: rgba(255, 255, 255, .5);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.btn-search {
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: #ffffff;
+  background-color: transparent;
+  pointer-events: painted;
+}
+
+.btn-search:focus~.input-search {
+  width: 300px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.input-search:focus {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+
+.menu-items {
+  font-size: 2rem;
+  color: rgb(255, 80, 80);
+  text-align: center;
+  margin: 60px auto;
+}
+
+.menu-items strong {
+  position: relative;
+}
+
+.menu-items strong::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  height: 0.75rem;
+
+  z-index: 1;
+
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+/* breadcrumb style */
+.breadcrumbs{
+    color :var(--highlight);
+    margin : 10px 0;
+    text-decoration: none;
+}
+
+.breadcrumbs >  span{
+  margin:0 10px;
+}
+
+.breadcrumbs > span a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.breadcrumbs > span a:hover{
+  text-decoration: underline;
+}
+
+.breadcrumbs >  span:last-child{
+    color : orange;
+}
+
+hr{
+  border:none;
+  border-bottom: 1px dotted var(--highlight);
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+
+.main{
+  display: flex;
+  column-gap: 20px;
+}
+
+.food-image{
+  flex-basis: 50%;
+}
+
+.food-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* food description */
+
+.description{
+  flex-grow: 1;
+}
+
+h3{
+  line-height: 1.4;
+}
+
+h2{
+  margin-bottom : 30px;
+}
+
+h5{
+  margin-bottom: 20px;
+}
+
+p{
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+/* spicy meter */
+
+.container {
+  margin-bottom: 20px;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: column-reverse;
+  height: 150px;
+  position: relative;
+}
+
+.rating-0 {
+  filter: grayscale(100%);
+}
+
+.rating > input[type="radio"] {
+  display: none;
+}
+
+.rating > label {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-top: auto;
+  background-image: url("./assets/chili.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+  transition: .3s;
+}
+
+.rating > input:checked ~ label,
+.rating > input:checked ~ label ~ label {
+  background-image: url("./assets/colored-chili.png");
+}
+
+
+.rating > input:not(:checked) ~ label:hover,
+.rating > input:not(:checked) ~ label:hover ~ label {
+  background-image: url("./assets/colored-chili.png");
+}
+
+/* spicy level selection */
+
+
+.spicy-level{
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  margin: 40px 0;
+}
+
+label {
+  margin-right: 15px;
+  line-height: 32px;
+}
+
+input {
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+
+}
+
+input:checked {
+  border: 6px solid black;
+}
+
+button,
+legend {
+  color: white;
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 0;
+  border: 0;
+  font-size: 14px;
+}
+
+button:hover,
+button:focus {
+  color: #999;
+}
+
+button:active {
+  background-color: white;
+  color: black;
+  outline: 1px solid black;
+}
+
+
+

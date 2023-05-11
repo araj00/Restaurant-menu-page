@@ -1,0 +1,113 @@
+{
+    "items": [
+      {
+        "sys": { "id": "1" },
+        "fields": {
+          "title": "Chicken Burger",
+          "price": 200,
+          "category":"Burgers",
+          "image": { "fields": { "file": { "url": "./assets/burger1.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "title": "Chessy Burger",
+          "price": 250,
+          "category" : "Burgers",
+          "image": { "fields": { "file": { "url": "./assets/burger2.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "title": "Coke Icecream Milkshake",
+          "price": 50,
+          "category" : "Juice and Milkshake",
+          "image": { "fields": { "file": { "url": "./assets/juice-milkshake1.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "4" },
+        "fields": {
+          "title": "Orange Juice",
+          "price": 50,
+          "category" : "Juice and Milkshake",
+          "image": { "fields": { "file": { "url": "./assets/juice-milkshake2.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "5" },
+        "fields": {
+          "title": "Pomegranate Juice",
+          "price": 70,
+          "category" : "Juice and Milkshake",
+          "image": { "fields": { "file": { "url": "./assets/juice-milkshake3.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "6" },
+        "fields": {
+          "title": "Oreo Milkshake",
+          "price": 120,
+          "category" : "Juice and Milkshake",
+          "image": { "fields": { "file": { "url": "./assets/juice-milkshake4.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "7" },
+        "fields": {
+          "title": "Biryani",
+          "price": 200,
+          "category":"Main Course",
+          "image": { "fields": { "file": { "url": "./assets/main-course1.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "8" },
+        "fields": {
+          "title": "Pasta",
+          "price": 220,
+          "category":"Main Course",
+          "image": { "fields": { "file": { "url": "./assets/main-course2.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "9" },
+        "fields": {
+          "title": "Chicken Kebab",
+          "price": 220,
+          "category":"Main Course",
+          "image": { "fields": { "file": { "url": "./assets/main-course3.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "10" },
+        "fields": {
+          "title": "Chicken Tandoori",
+          "price": 400,
+          "category":"Main Course",
+          "image": { "fields": { "file": { "url": "./assets/main-course4.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "11" },
+        "fields": {
+          "title": "Panner Veg Salad",
+          "price": 140,
+          "category":"Salad",
+          "image": { "fields": { "file": { "url": "./assets/salad1.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "12" },
+        "fields": {
+          "title": "Chicken Salad",
+          "price": 220,
+          "category":"Salad",
+          "image": { "fields": { "file": { "url": "./assets/salad2.jpg" } } }
+        }
+      }
+    ]
+  }
+  
