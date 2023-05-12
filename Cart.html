@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="./cart.css">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class='nav'>
+        <ul class="menu">
+            <li>
+                <a href="#">Special</a>
+                <img src="./assets/caret-down-solid.svg" style="width:20px;height: 20px;" />
+                <ul class="submenu">
+                    <li><a href="">special 1</a></li>
+                    <li><a href="">special 2</a></li>
+                </ul>
+            </li>
+            <li>
+                <img src="./assets/lunch.png" alt="lunch" />
+                <a href="#">lunch menu</a>
+                <img src="./assets/caret-down-solid.svg" style="width:20px;height: 20px;" />
+                <ul class="submenu">
+                    <li><a href="">lunch 1</a></li>
+                    <li><a href="">lunch 2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">menu</a>
+                <img src="./assets/caret-down-solid.svg" style="width:20px;height: 20px;" />
+
+                <ul class="submenu">
+                    <li><a href="">menu 1</a></li>
+                    <li><a href="">menu 2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">vegetarian menu</a>
+                <img src="./assets/caret-down-solid.svg" style="width:20px;height: 20px;" />
+                <ul class="submenu">
+                    <li><a href="">vegetarian 1</a></li>
+                    <li><a href="">vegetarian 2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">beverages</a>
+                <img src="./assets/caret-down-solid.svg" style="width:20px;height: 20px;" />
+                <ul class="submenu">
+                    <li><a href="">beverage 1</a></li>
+                    <li><a href="">beverage 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">catering</a></li>
+            <li><a href="#">download menu</a></li>
+        </ul>
+
+        <div class="search-box">
+            <button class="btn-search"><img src="./assets/search-icons.png" /></button>
+            <input type="text" class="input-search" placeholder="Type to Search...">
+        </div>
+
+        <div class="wishlist">
+            <img src="./assets/heart.png" alt="">
+        </div>
+    </nav>
+
+    <!-- cart table -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-column="Product">
+                    <div class="menu-name">
+                        <img src="./assets/burger1.jpg" alt="">
+                        <p>Chicken Burger</p>
+                    </div>
+                </td>
+                <td data-column="Price">Rs. 200</td>
+                <td data-column="Quantity">
+                    <div class="buttons">
+
+                        <div class="quantity-counter">
+                            <button class="decrease btn">-</button>
+                            <div class="quantity"></div>
+                            <button class="increase btn">+</button>
+                        </div>
+
+                    </div>
+                </td>
+                <td data-column="Subtotal">
+                    <div class="delete-food">
+
+                        <p> Rs. 200</p>
+                        <img src="./assets/delete.png" style="width:30px;height:30px;margin-left: 10px;" alt="">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td data-column="Product">Andor</td>
+                <td data-column="Price">Nagy</td>
+                <td data-column="Quantity">Designer</td>
+                <td data-column="Subtotal">@andornagy</td>
+            </tr>
+            <tr>
+                <td data-column="Product">Tamas</td>
+                <td data-column="Price">Biro</td>
+                <td data-column="Quantity">Game Tester</td>
+                <td data-column="Subtotal">@tamas</td>
+            </tr>
+            <tr>
+                <td data-column="Product">Zoli</td>
+                <td data-column="Price">Mastah</td>
+                <td data-column="Quantity">Developer</td>
+                <td data-column="Subtotal">@zoli</td>
+            </tr>
+            <tr>
+                <td data-column="Product">Szabi</td>
+                <td data-column="Price">Nagy</td>
+                <td data-column="Quantity">Chief Sandwich Eater</td>
+                <td data-column="Subtotal">@szabi</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="./counter.js"></script>
+</body>
+
+</html>

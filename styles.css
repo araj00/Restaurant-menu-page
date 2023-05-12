@@ -11,6 +11,10 @@
 font-family: 'Lato', sans-serif;
 }
 
+:root{
+  --theme : rgb(255, 80, 80);
+}
+
 /*| Navigation |*/
 
 /* menu list */
@@ -166,7 +170,7 @@ nav .menu .submenu {
 
 .menu-items {
   font-size: 2rem;
-  color: rgb(255, 80, 80);
+  color: var(--theme);
   text-align: center;
   margin: 60px auto;
 }
@@ -302,5 +306,5 @@ nav .menu .submenu {
   margin-right: 10px;
   color: #fff;
 
-  background-color: rgb(255, 80, 80);
+  background-color: var(--theme);
 }

@@ -52,7 +52,7 @@ class Product {
                 console.log(i)
                 if (i === 0) {
                     result += `
-            <a href="./${data[key][i].fields.category}${data[key][i].sys.id}.html" class="images main">
+            <a href="./${data[key][i].sys.id}.html" class="images main">
             <img src="${data[key][i].fields.image.fields.file.url}" alt=${data[key][i].fields.title} />
             <div class="image-text">
             <div>${data[key][i].fields.title}</div>
