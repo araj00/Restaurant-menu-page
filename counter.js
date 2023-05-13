@@ -40,8 +40,6 @@ controller.forEach(function(item){
   quantity.textContent = num;
 
 
-
-
   
 
     

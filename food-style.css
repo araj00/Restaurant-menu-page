@@ -498,11 +498,6 @@ hr {
   flex-basis: 50%;
 }
 
-.food-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 /* food description */
 
@@ -648,6 +643,11 @@ button:active {
   font-weight: bold;
 }
 
+.food-image img {
+  max-width: 100%;
+  height: auto;
+}
+
 .btn,
 .btn:focus,.cart-btn {
   cursor: pointer;
@@ -683,3 +683,53 @@ button:active {
   font-weight: 500;
   font-size: var(--btn-font-size);
 }
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .food-image {
+    width: 100%;
+  }
+ 
+  .description {
+    text-align: left;
+  }
+
+  .container {
+    width: 100%;
+  }
+  
+  .spicy-level {
+    /* text-align: center; */
+    font-size: 12px;
+  }
+  
+ 
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* .spicy-level {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .spicy-level input[type="radio"] {
+    margin-bottom: 5px;
+  } */
+}
+
+
+
