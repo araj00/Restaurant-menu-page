@@ -5,77 +5,66 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="food-style.css">
   <title>Document</title>
 </head>
 
 <body>
   <!-- navbar -->
-  <nav class='nav'>
-    <ul class="menu">
-      <li>
-        <a href="#">Special</a>
-        <img src="./assets/caret-down-solid.svg" style="width:20px;height: 20px;" />
-        <ul class="submenu">
-          <li><a href="">special 1</a></li>
-          <li><a href="">special 2</a></li>
+  
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#">Foodiz</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">Foodiz</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><a href="#">SPECIAL</a></li>
+          <li>
+            <a href="#">LUNCH</a>
+            <i class='bx bxs-chevron-down lunch-arrow arrow  '></i>
+            <ul class="sub-menu sub-menu">
+              <li><a href="#">SOUTH LUNCH</a></li>
+              <li><a href="#">NORTH LUNCH</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">MENU</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="#">MENU 1</a></li>
+              <li><a href="#">MENU 2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">BEVERAGES</a></li>
+          <li><a href="#">CATERING</a></li>
         </ul>
-      </li>
-      <li>
-        <img src="./assets/lunch.png" alt="lunch" />
-        <a href="#">lunch menu</a>
-        <img src="./assets/caret-down-solid.svg" style="width:20px;height: 20px;" />
-        <ul class="submenu">
-          <li><a href="">lunch 1</a></li>
-          <li><a href="">lunch 2</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">menu</a>
-        <img src="./assets/caret-down-solid.svg" style="width:20px;height: 20px;" />
-
-        <ul class="submenu">
-          <li><a href="">menu 1</a></li>
-          <li><a href="">menu 2</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">vegetarian menu</a>
-        <img src="./assets/caret-down-solid.svg" style="width:20px;height: 20px;" />
-        <ul class="submenu">
-          <li><a href="">vegetarian 1</a></li>
-          <li><a href="">vegetarian 2</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">beverages</a>
-        <img src="./assets/caret-down-solid.svg" style="width:20px;height: 20px;" />
-        <ul class="submenu">
-          <li><a href="">beverage 1</a></li>
-          <li><a href="">beverage 2</a></li>
-        </ul>
-      </li>
-      <li><a href="#">catering</a></li>
-      <li><a href="#">download menu</a></li>
-    </ul>
-
-    <div class="search-box">
-      <button class="btn-search"><img src="./assets/search-icons.png" /></button>
-      <input type="text" class="input-search" placeholder="Type to Search...">
-    </div>
-
-    <div class="wishlist">
-      <img src="./assets/heart.png" alt="">
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
     </div>
   </nav>
 
-  <div style="margin:0 auto;width:70%;">
-    <!-- breadcrumbs -->
-    <div class="breadcrumbs">
-      <span><a href="./index.html">Home</a></span> <span>/</span> Menu <span>/</span> Burgers <span>/</span> <span style="margin-left:10px;">Chicken
-            Burger</span></span>
+
+ <div class="wishlist">
+      <img src="./assets/heart.png" alt="">
     </div>
-    <hr />
+  </nav>
+<div style="margin:0 auto;width:70%;">
+  <!-- breadcrumbs -->
+  <div class="breadcrumbs">
+    <span><a href="./index.html">Home</a></span> <span>/</span> Menu <span>/</span> Burgers <span>/</span> <span style="margin-left:10px;">Chicken
+          Burger</span></span>
+  </div>
+  <hr />
 
     <!-- main-content -->
 
@@ -158,7 +147,9 @@
    <hr/>
   </div>
 
-  <script src="./counter.js"></script>
+  <script src="./counter.js">
+    
+  </script>
 </body>
 
 </html>

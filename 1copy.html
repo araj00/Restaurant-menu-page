@@ -1,4 +1,176 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="food-style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class='nav'>
+    <ul class="menu">
+      <li>
+        <a href="#">Special</a>
+        <img src="./assets/caret-down-solid.svg" style="width:20px;height: 20px;" />
+        <ul class="submenu">
+          <li><a href="">special 1</a></li>
+          <li><a href="">special 2</a></li>
+        </ul>
+      </li>
+      <li>
+        <img src="./assets/lunch.png" alt="lunch" />
+        <a href="#">lunch menu</a>
+        <img src="./assets/caret-down-solid.svg" style="width:20px;height: 20px;" />
+        <ul class="submenu">
+          <li><a href="">lunch 1</a></li>
+          <li><a href="">lunch 2</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">menu</a>
+        <img src="./assets/caret-down-solid.svg" style="width:20px;height: 20px;" />
+
+        <ul class="submenu">
+          <li><a href="">menu 1</a></li>
+          <li><a href="">menu 2</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">vegetarian menu</a>
+        <img src="./assets/caret-down-solid.svg" style="width:20px;height: 20px;" />
+        <ul class="submenu">
+          <li><a href="">vegetarian 1</a></li>
+          <li><a href="">vegetarian 2</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">beverages</a>
+        <img src="./assets/caret-down-solid.svg" style="width:20px;height: 20px;" />
+        <ul class="submenu">
+          <li><a href="">beverage 1</a></li>
+          <li><a href="">beverage 2</a></li>
+        </ul>
+      </li>
+      <li><a href="#">catering</a></li>
+      <li><a href="#">download menu</a></li>
+    </ul>
+
+    <div class="search-box">
+      <button class="btn-search"><img src="./assets/search-icons.png" /></button>
+      <input type="text" class="input-search" placeholder="Type to Search...">
+    </div>
+
+    <div class="wishlist">
+      <img src="./assets/heart.png" alt="">
+    </div>
+  </nav>
+
+  <div style="margin:0 auto;width:70%;">
+    <!-- breadcrumbs -->
+    <div class="breadcrumbs">
+      <span><a href="./index.html">Home</a></span> <span>/</span> Menu <span>/</span> Burgers <span>/</span> <span style="margin-left:10px;">Chicken
+            Burger</span></span>
+    </div>
+    <hr />
+
+    <!-- main-content -->
+
+    <div class="main">
+           <div class="food-image">
+            <img src="./assets/burger1.jpg" alt="chicken burger">
+           </div>
+
+           <!-- food description -->
+
+           <div class="description">
+            <h3>Chicken Burger</h3>
+            <h2>Rs. 200</h2>
+
+            <hr/>
+            
+            <p>A chicken burger is a sandwich made with a chicken patty as the main filling, typically served in a bun with various toppings and condiments.</p>
+            <h5>Availability : <span style="text-transform: capitalize;line-height: 1.5;color: green;">in stock</span></h5>
+
+
+
+            <h5>Spicy Level</h5>
+
+            <div class="container">
+              <div class="feedback">
+                <div class="rating">
+                  <input type="radio" name="rating" id="rating-5">
+                  <label for="rating-5"></label>
+                  <input type="radio" name="rating" id="rating-4">
+                  <label for="rating-4"></label>
+                  <input type="radio" name="rating" id="rating-3">
+                  <label for="rating-3"></label>
+                  <input type="radio" name="rating" id="rating-2">
+                  <label for="rating-2"></label>
+                  <input type="radio" name="rating" id="rating-1">
+                  <label for="rating-1"></label>
+            
+           </div>
+    </div>
+  </div>
+  <hr/>
+
+  <div class="spicy-level">
+    <p style="text-transform: capitalize;margin-right: 20px;">spice level</p>
+    <input
+      type="radio"
+      id="mild"
+      name="spice"
+      value="mild"
+      checked />
+    <label for="mild">Mild</label>
+
+    <input type="radio" id="spicy" name="spice" value="spicy" />
+    <label for="spicy">Spicy</label>
+
+    <input type="radio" id="medium-spicy" name="spice" value="medium spicy" />
+    <label for="medium-spicy">Medium Spicy</label>
+    <input type="radio" id="extra-spicy" name="spice" value="extra spicy" />
+    <label for="extra-spicy">Extra Spicy</label>
+  </div>
+
+  <!-- add to cart -->
+  <div class="buttons">
+    
+     <div class="quantity-counter">
+      <button class="decrease btn">-</button>
+      <div class="quantity"></div>
+      <button class="increase btn">+</button>
+     </div>
+
+     <button class="cart-btn">Add to Cart</button>
+    </div>
+  <hr/>
+  <div class="buttons">
+    
+    <img src="./assets/wishlist.png" style="width:30px;height: 30px;"alt="wishlist icon">
+
+    <div class="wishlist">Add to Wishlist</div>
+   </div>
+   <hr/>
+  </div>
+
+  <script src="./counter.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+<!-- css copy -->
+
+
+<!-- @import url(https://fonts.googleapis.com/css?family=Lato);
 
 :root {
   --highlight: rgba(0, 0, 0, .5);
@@ -19,292 +191,6 @@
 
 /*| Navigation |*/
 
-nav{
-  /* position: fixed; */
-  top: 0;
-  left: 0;
-  width: 100%;
-  background:rgb(255, 80, 80);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  z-index: 99;
-}
-nav .navbar{
-  max-width: 1250px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: auto;
-  padding: 0 50px;
-}
-.navbar .logo a{
-  font-size: 30px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-}
-nav .navbar .nav-links{
-  line-height: 70px;
-  height: 100%;
-}
-nav .navbar .links{
-  display: flex;
-}
-nav .navbar .links li{
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-  padding: 0 14px;
-}
-nav .navbar .links li a{
-  height: 100%;
-  text-decoration: none;
-  white-space: nowrap;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 500;
-}
-.links li:hover .lunch-arrow,
-.links li:hover .js-arrow{
-  transform: rotate(180deg);
-  }
-
-nav .navbar .links li .arrow{
-  /* background: red; */
-  height: 100%;
-  width: 22px;
-  line-height: 70px;
-  text-align: center;
-  display: inline-block;
-  color: #fff;
-  transition: all 0.3s ease;
-}
-nav .navbar .links li .sub-menu{
-  position: absolute;
-  top: 70px;
-  left: 0;
-  line-height: 40px;
-  background: rgb(255, 80, 80);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  border-radius: 0 0 4px 4px;
-  display: none;
-  z-index: 2;
-}
-nav .navbar .links li:hover .sub-menu,
-nav .navbar .links li:hover .js-sub-menu{
-  display: block;
-}
-.navbar .links li .sub-menu li{
-  padding: 0 22px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-.navbar .links li .sub-menu a{
-  color: #fff;
-  font-size: 15px;
-  font-weight: 500;
-}
-.navbar .links li .sub-menu .more-arrow{
-  line-height: 40px;
-}
-
-.navbar .links li .sub-menu .more-sub-menu{
-  position: absolute;
-  top: 0;
-  left: 100%;
-  border-radius: 0 4px 4px 4px;
-  z-index: 1;
-  display: none;
-}
-.links li .sub-menu .more:hover .more-sub-menu{
-  display: block;
-}
-.navbar .search-box{
-  position: relative;
-   height: 40px;
-  width: 40px;
-}
-.navbar .search-box i{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  line-height: 40px;
-  text-align: center;
-  font-size: 22px;
-  color: #fff;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.navbar .search-box .input-box{
-  position: absolute;
-  right: calc(100% - 40px);
-  top: 80px;
-  height: 60px;
-  width: 300px;
-  background: rgb(255, 80, 80);
-  border-radius: 6px;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.4s ease;
-}
-.navbar.showInput .search-box .input-box{
-  top: 65px;
-  opacity: 1;
-  pointer-events: auto;
-  background: rgb(255, 80, 80);
-}
-.search-box .input-box::before{
-  content: '';
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  background: rgb(255, 80, 80);
-  right: 10px;
-  top: -6px;
-  transform: rotate(45deg);
-}
-.search-box .input-box input{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 4px;
-  transform: translate(-50%, -50%);
-  height: 35px;
-  width: 280px;
-  outline: none;
-  padding: 0 15px;
-  font-size: 16px;
-  border: none;
-}
-.navbar .nav-links .sidebar-logo{
-  display: none;
-}
-.navbar .bx-menu{
-  display: none;
-}
-@media (max-width:920px) {
-  nav .navbar{
-    max-width: 100%;
-    padding: 0 25px;
-  }
-
-  nav .navbar .logo a{
-    font-size: 27px;
-  }
-  nav .navbar .links li{
-    padding: 0 10px;
-    white-space: nowrap;
-  }
-  nav .navbar .links li a{
-    font-size: 15px;
-  }
-}
-@media (max-width:800px){
-  nav{
-    /* position: relative; */
-  }
-  .navbar .bx-menu{
-    display: block;
-  }
-  nav .navbar .nav-links{
-    position: fixed;
-    top: 0;
-    left: -100%;
-    display: block;
-    max-width: 270px;
-    width: 100%;
-    background:  rgb(255, 80, 80);
-    line-height: 40px;
-    padding: 20px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.5s ease;
-    z-index: 1000;
-  }
-  .navbar .nav-links .sidebar-logo{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .sidebar-logo .logo-name{
-    font-size: 25px;
-    color: #fff;
-  }
-    .sidebar-logo  i,
-    .navbar .bx-menu{
-      font-size: 25px;
-      color: #fff;
-    }
-  nav .navbar .links{
-    display: block;
-    margin-top: 20px;
-  }
-  nav .navbar .links li .arrow{
-    line-height: 40px;
-  }
-nav .navbar .links li{
-    display: block;
-  }
-nav .navbar .links li .sub-menu{
-  position: relative;
-  top: 0;
-  box-shadow: none;
-  display: none;
-}
-nav .navbar .links li .sub-menu li{
-  border-bottom: none;
-
-}
-.navbar .links li .sub-menu .more-sub-menu{
-  display: none;
-  position: relative;
-  left: 0;
-}
-.navbar .links li .sub-menu .more-sub-menu li{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.links li:hover .lunch-arrow,
-.links li:hover .js-arrow{
-  transform: rotate(0deg);
-  }
-  .navbar .links li .sub-menu .more-sub-menu{
-    display: none;
-  }
-  .navbar .links li .sub-menu .more span{
-    /* background: red; */
-    display: flex;
-    align-items: center;
-    /* justify-content: space-between; */
-  }
-
-  .links li .sub-menu .more:hover .more-sub-menu{
-    display: none;
-  }
-  nav .navbar .links li:hover .sub-menu,
-  nav .navbar .links li:hover .js-sub-menu{
-    display: none;
-  }
-.navbar .nav-links.show1 .links .sub-menu,
-  .navbar .nav-links.show3 .links .js-sub-menu,
-  .navbar .nav-links.show2 .links .more .more-sub-menu{
-      display: block;
-    }
-    .navbar .nav-links.show1 .links .lunch-arrow,
-    .navbar .nav-links.show3 .links .js-arrow{
-        transform: rotate(180deg);
-}
-    .navbar .nav-links.show2 .links .more-arrow{
-      transform: rotate(90deg);
-    }
-}
-@media (max-width:370px){
-  nav .navbar .nav-links{
-  max-width: 100%;
-} 
-}
 /* menu list */
 
 .nav {
@@ -682,4 +568,4 @@ button:active {
   color: grey;
   font-weight: 500;
   font-size: var(--btn-font-size);
-}
+} -->
