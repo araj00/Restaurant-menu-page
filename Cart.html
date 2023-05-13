@@ -72,73 +72,59 @@
         </div>
     </nav>
 
+
     <!-- cart table -->
+    <main>
+    <div class="cart-table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Product</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Subtotal</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td data-column="Product">
-                    <div class="menu-name">
-                        <img src="./assets/burger1.jpg" alt="">
-                        <p>Chicken Burger</p>
-                    </div>
-                </td>
-                <td data-column="Price">Rs. 200</td>
-                <td data-column="Quantity">
-                    <div class="buttons">
+            </tbody>
 
-                        <div class="quantity-counter">
-                            <button class="decrease btn">-</button>
-                            <div class="quantity"></div>
-                            <button class="increase btn">+</button>
-                        </div>
 
-                    </div>
-                </td>
-                <td data-column="Subtotal">
-                    <div class="delete-food">
+        </table>
+        
+        <div class="coupon">
+            <input type="text" placeholder="coupon code">
+            <button class="coupon-btn">Apply coupon</button>
+        </div>
+    </div>
 
-                        <p> Rs. 200</p>
-                        <img src="./assets/delete.png" style="width:30px;height:30px;margin-left: 10px;" alt="">
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td data-column="Product">Andor</td>
-                <td data-column="Price">Nagy</td>
-                <td data-column="Quantity">Designer</td>
-                <td data-column="Subtotal">@andornagy</td>
-            </tr>
-            <tr>
-                <td data-column="Product">Tamas</td>
-                <td data-column="Price">Biro</td>
-                <td data-column="Quantity">Game Tester</td>
-                <td data-column="Subtotal">@tamas</td>
-            </tr>
-            <tr>
-                <td data-column="Product">Zoli</td>
-                <td data-column="Price">Mastah</td>
-                <td data-column="Quantity">Developer</td>
-                <td data-column="Subtotal">@zoli</td>
-            </tr>
-            <tr>
-                <td data-column="Product">Szabi</td>
-                <td data-column="Price">Nagy</td>
-                <td data-column="Quantity">Chief Sandwich Eater</td>
-                <td data-column="Subtotal">@szabi</td>
-            </tr>
-        </tbody>
-    </table>
+    <div style="margin:40px 300px 0 500px;">
+       <h2 style="margin-bottom: 40px;">Cart totals</h2>
 
-    <script src="./counter.js"></script>
+       <div class="total-box">
+            <div class="total-subtotal box">
+                <p>Subtotal</p>
+                <p class="subtotal-value"></p>
+            </div>
+            <hr/>
+            <div class="tax box">
+                <p class="tax-value">Tax 9.375%</p>
+                <p class="tax-calculation"></p>
+            </div>
+            <hr/>
+            <div class="total box">
+                <p>Total</p>
+                <p class="total-calculation"></p>
+            </div>
+
+       </div>
+
+       <p>Need Utensils<span style="color: red;margin:30px 0;">*</span></p>
+    </div>
+
+    </main>
+        
+    <script src="./cart.js"></script>
 </body>
 
 </html>

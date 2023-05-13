@@ -172,10 +172,63 @@ nav .menu .submenu {
 
 /* cart-table */
 
+
 table {
     width: 900px;
     border-collapse: collapse;
     margin: 50px auto;
+}
+
+input[type="text"],input[type="text"]:focus{
+    width: 200px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid gray;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.total-box{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 10px 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+.coupon-btn,.coupon-btn:focus{
+    cursor: pointer;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  font-size: var(--btn-font-size);
+  color: grey;
+  outline: none;
+  font-weight: bold;
+    background-color: orange;
+  color: #fff;
+  outline: none;
+  padding: 2px 12px;
+  border-radius: 14px;
+  margin-left: 20px;
+  text-transform: uppercase;
 }
 
 
@@ -202,6 +255,8 @@ th {
     height: 80px;
     margin-right: 20px;
 }
+
+
 
 td[data-column="Price"],td[data-column="Subtotal"]{
     font-weight: bolder;

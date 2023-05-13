@@ -64,7 +64,7 @@ class Product {
                 }
                 else {
                     result += `
-                <a href="./${data[key][i].fields.category}${data[key][i].sys.id}.html" class="images">
+                <a href="./${data[key][i].sys.id}.html" class="images">
                 <img src="${data[key][i].fields.image.fields.file.url}" alt=${data[key][i].fields.title} />
                 <div class="image-text">
                 <div>${data[key][i].fields.title}</div>
